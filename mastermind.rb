@@ -61,10 +61,10 @@ def breaker
 end
 
 def maker
-    print 'Please choose a 4-digit code for the computer to guess. '
+    print 'Please choose a 4-digit code for the computer to guess: '
     GAME.code = gets.chomp
     until GAME.code.match?(/\b[1-9]{4}\b/) do
-        print 'Please choose a 4-digit code for the computer to guess. '
+        print 'Please choose a 4-digit code for the computer to guess: '
         GAME.code = gets.chomp
     end
     GAME.code = GAME.code.split('').map {|c| c.to_i} 
