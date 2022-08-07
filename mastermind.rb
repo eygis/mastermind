@@ -97,7 +97,7 @@ end
 print '~~If you would like to be the code maker, please enter "1", otherwise if you would like to be the code breaker, please enter any other character. '
 type = gets.chomp
 until type.length == 1 do
-    print 'To be the maker please enter "1", else if you want to be the breaker, please type any character other than 1. '
+    print 'To be the maker please enter "1", else if you want to be the breaker, please enter any character other than 1. '
     type = gets.chomp
 end
 GAME = Game.new(type)
