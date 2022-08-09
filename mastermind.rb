@@ -90,7 +90,7 @@ def maker
     if GAME.win == false
         puts "You lose, the answer was: #{GAME.code.join('')}"
     else
-        puts 'You Win!'
+        puts 'You win!'
     end
 end
 
